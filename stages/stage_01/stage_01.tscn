@@ -32,7 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://gndch3lv12s5" path="res://stages/stage_01/stage_elements/buildings/windows/standard/windows_1_3_50.png" id="9_r3hf1"]
 [ext_resource type="Texture2D" uid="uid://ccfpi6frhepgd" path="res://stages/stage_01/stage_elements/buildings/doors/door_2_revised_50.png" id="10_5iloq"]
 [ext_resource type="Texture2D" uid="uid://sblsgjraucxi" path="res://stages/stage_01/stage_elements/buildings/doors/door_1_revised_new_50.png" id="10_gbajp"]
-[ext_resource type="PackedScene" path="res://stages/stage_01/stage_elements/tax_man_area/brick_gate/dirty_brick_wall_gate.tscn" id="10_nq7xs"]
+[ext_resource type="PackedScene" uid="uid://doai40vo3rvc6" path="res://stages/stage_01/stage_elements/tax_man_area/brick_gate/dirty_brick_wall_gate.tscn" id="10_nq7xs"]
 [ext_resource type="Texture2D" uid="uid://k1o6b34fd3cm" path="res://stages/stage_01/stage_elements/buildings/foster_mart/area_2_rocks_revised.png" id="10_oy6ry"]
 [ext_resource type="Texture2D" uid="uid://dt36h10hb1mpc" path="res://stages/stage_01/stage_elements/tax_man_area/tax_man_floor_chess.png" id="10_t7pvb"]
 [ext_resource type="Script" path="res://addons/quiver.beat_em_up/utilities/custom_nodes/quiver_fence.gd" id="10_u6nh0"]
@@ -67,8 +67,8 @@
 [ext_resource type="Texture2D" uid="uid://dh7tejawvukva" path="res://stages/stage_01/stage_elements/street_poles/metal_post.png" id="50_pgs7w"]
 [ext_resource type="Texture2D" uid="uid://dx5n25lg03m3j" path="res://stages/stage_01/stage_elements/tax_man_area/tax_man_black_marble.png" id="56_t2mje"]
 [ext_resource type="PackedScene" uid="uid://dwgxqe6h48x4e" path="res://characters/enemies/tax_man/tax_man.tscn" id="59_jn7co"]
-[ext_resource type="PackedScene" path="res://stages/stage_01/stage_elements/tax_man_area/tax_man_throne.tscn" id="60_60ghw"]
-[ext_resource type="PackedScene" path="res://stages/stage_01/stage_elements/gates/tori_gate/tori_gate.tscn" id="60_mx5oi"]
+[ext_resource type="PackedScene" uid="uid://0gheywgait8o" path="res://stages/stage_01/stage_elements/tax_man_area/tax_man_throne.tscn" id="60_60ghw"]
+[ext_resource type="PackedScene" uid="uid://7hcuofb0g50x" path="res://stages/stage_01/stage_elements/gates/tori_gate/tori_gate.tscn" id="60_mx5oi"]
 [ext_resource type="Script" path="res://addons/quiver.beat_em_up/combat/collision_areas/quiver_wall_hit_box.gd" id="62_je6pb"]
 [ext_resource type="Script" path="res://addons/quiver.beat_em_up/combat/quiver_attack_data.gd" id="63_6am3i"]
 [ext_resource type="Script" path="res://addons/quiver.beat_em_up/utilities/custom_nodes/enemy_spawner/quiver_spawn_data.gd" id="70_we574"]
@@ -88,37 +88,37 @@ fill = 1
 fill_from = Vector2(0.603352, 0.349693)
 fill_to = Vector2(0, 0.475798)
 
-[sub_resource type="Gradient" id="Gradient_ebne2"]
+[sub_resource type="Gradient" id="Gradient_freqm"]
 resource_local_to_scene = true
 interpolation_mode = 2
 offsets = PackedFloat32Array(0, 0.268817, 0.575269, 0.854839)
 colors = PackedColorArray(0.0823529, 0.027451, 0.027451, 1, 0.505882, 0.137255, 0.121569, 1, 0.596078, 0.313726, 0.188235, 1, 0.745098, 0.572549, 0.411765, 1)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_dm7o6"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0p05i"]
 resource_local_to_scene = true
-gradient = SubResource("Gradient_ebne2")
+gradient = SubResource("Gradient_freqm")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jq4kj"]
 shader = ExtResource("5_iqlbw")
 shader_parameter/is_active = true
 shader_parameter/show_grayscale = false
-shader_parameter/gradient = SubResource("GradientTexture1D_dm7o6")
+shader_parameter/gradient = SubResource("GradientTexture1D_0p05i")
 
-[sub_resource type="Gradient" id="Gradient_6kqft"]
+[sub_resource type="Gradient" id="Gradient_wq764"]
 resource_local_to_scene = true
 interpolation_mode = 2
 offsets = PackedFloat32Array(0, 0.268817, 0.575269, 0.854839)
 colors = PackedColorArray(0.0392157, 0.027451, 0.14902, 1, 0.243137, 0.227451, 0.34902, 1, 0.380392, 0.368627, 0.486275, 1, 0.631373, 0.619608, 0.737255, 1)
 
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_b5con"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0j7gw"]
 resource_local_to_scene = true
-gradient = SubResource("Gradient_6kqft")
+gradient = SubResource("Gradient_wq764")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o8ik0"]
 shader = ExtResource("5_iqlbw")
 shader_parameter/is_active = true
 shader_parameter/show_grayscale = false
-shader_parameter/gradient = SubResource("GradientTexture1D_b5con")
+shader_parameter/gradient = SubResource("GradientTexture1D_0j7gw")
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nuxeb"]
 polygon = PackedVector2Array(-30, -1178, 1345, 185, 125, 193, -47, 202)

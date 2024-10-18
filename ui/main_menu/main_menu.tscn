@@ -309,10 +309,10 @@ grow_vertical = 2
 script = ExtResource("1_xf06u")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "intro"
 libraries = {
 "": SubResource("AnimationLibrary_xoxv8")
 }
+autoplay = "intro"
 
 [node name="MenuArt" type="Control" parent="."]
 layout_mode = 3

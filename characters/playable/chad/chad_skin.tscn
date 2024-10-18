@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dbuekuon5twyg"]
+[gd_scene load_steps=19 format=3 uid="uid://dbuekuon5twyg"]
 
 [ext_resource type="PackedScene" uid="uid://bkfvltx0n6b8y" path="res://addons/quiver.beat_em_up/characters/quiver_character_skin_base.tscn" id="1_neyaj"]
 [ext_resource type="AnimationLibrary" uid="uid://bec4th23gqkxd" path="res://characters/playable/chad/resources/anim_library_chad.tres" id="3_uxodg"]
@@ -17,10 +17,6 @@
 _data = {
 "RESET": ExtResource("4_vrxwg")
 }
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_g3bel"]
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_vwjju"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75u0j"]
 size = Vector2(149, 329)
@@ -46,16 +42,16 @@ metadata/_edit_vertical_guides_ = [-141.0, 140.0]
 metadata/_edit_horizontal_guides_ = [14.0, -445.0, -390.0]
 
 [node name="AnimationPlayer" parent="." index="0"]
-playback_process_mode = 0
+callback_mode_process = 0
 libraries = {
 "": SubResource("AnimationLibrary_6o40w"),
 "Chad": ExtResource("3_uxodg")
 }
 
 [node name="AnimationTree" parent="." index="1"]
+active = false
+callback_mode_process = 0
 tree_root = ExtResource("4_6ugt2")
-process_callback = 0
-parameters/state_machine/playback = SubResource("AnimationNodeStateMachinePlayback_g3bel")
 parameters/state_machine/air_attack/blend_position = 1
 parameters/state_machine/attack1/blend_position = 1
 parameters/state_machine/attack2/blend_position = 1
@@ -68,7 +64,6 @@ parameters/state_machine/idle/blend_position = 1
 parameters/state_machine/jump/blend_position = 1
 parameters/state_machine/knockout_bounce/blend_position = 1
 parameters/state_machine/knockout_falling/blend_position = 1
-parameters/state_machine/knockout_ground/playback = SubResource("AnimationNodeStateMachinePlayback_vwjju")
 parameters/state_machine/knockout_ground/getting_up/blend_position = 1
 parameters/state_machine/knockout_ground/knockout_landed/blend_position = 1
 parameters/state_machine/knockout_launch/blend_position = 1
